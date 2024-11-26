@@ -12,7 +12,7 @@ A modern web application that generates images using OpenAI's DALL-E API based o
 
 ## 🚀 Live Demo
 
-Check out the live demo: [AI Image Generator](https://ai-image-generator-abdmas31.vercel.app/)
+Check out the live demo: [AI Image Generator](https://ai-image-generator-mocha.vercel.app/)
 
 ## 🛠️ Built With
 
