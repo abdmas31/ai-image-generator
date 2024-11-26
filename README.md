@@ -1,5 +1,5 @@
 # AI Image Generator
-
+My first personal project
 A modern web application that generates images using OpenAI's DALL-E API based on text descriptions.
 
 ## 🌟 Features
@@ -65,6 +65,3 @@ The following environment variables are required:
 3. Wait for the AI to create your image
 4. The generated image will appear below
 
-## 🤝 Contributing
-
-Contributions, issues, and feature requests are welcome!
