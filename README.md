@@ -1,5 +1,5 @@
 # AI Image Generator
-My first personal project
+My first personal project,
 A modern web application that generates images using OpenAI's DALL-E API based on text descriptions.
 
 ## 🌟 Features
