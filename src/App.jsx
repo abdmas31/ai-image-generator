@@ -49,33 +49,33 @@ function App() {
     }
 
   return (
-    <div className="fixed inset-0 bg-gray-800 overflow-hidden">
-      <div className="h-full w-full flex flex-col items-center p-8">
-        <h1 className="text-4xl font-bold text-white mb-8">AI Image Generator</h1>
-        <form className="flex gap-4 justify-center w-full mb-8" onSubmit={handleSubmit}>
-          <input 
-            className="w-[60%] max-w-2xl px-4 py-3 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-green-500 bg-gray-700"
-            type="text" 
-            placeholder="Describe your image..."
-            onChange={(e)=>{onChangeHandler(e)}}
-            value={input}
-          />
-          <button disabled={loading} type='submit' className="px-6 py-3 bg-green-500 text-white rounded-lg hover:bg-green-600 transition-colors">
-            {loading ? 'Generating...':'Generate Image'}
-          </button>
-        </form>
-        <div className='w-[46%] h-[calc(100%-200px)] bg-gray-700 rounded-lg flex items-center justify-center text-white disabled:opacity-50'>
-          {loading ? 'Generating your image...' : 
-          imageUrl ? (
-            <img 
-              src={imageUrl} 
-              alt="Generated"
-              className="max-w-full max-h-full object-contain rounded-lg p-2"
-            />
-          ) : 'Image will appear here'}
-        </div>
-      </div>
+<div className="fixed inset-0 bg-gray-800 min-h-screen">
+  <div className="container mx-auto px-4 py-8 flex flex-col items-center justify-start gap-8">
+  <h1 className="text-4xl font-bold text-white mb-4 mt-4">AI Image Generator</h1>
+    <form onSubmit={handleSubmit} className="w-full flex flex-col items-center gap-4">
+      <input 
+        type="text" 
+        placeholder="Describe your image..."
+        onChange={(e)=>{onChangeHandler(e)}}
+        value={input}
+        className="w-[50%] p-3 rounded-lg bg-gray-700 text-white"
+      />
+      <button disabled={loading} type='submit' className="px-6 py-3 bg-green-500 text-white rounded-lg hover:bg-green-600 transition-colors disabled:opacity-50 mt-2">
+        {loading ? 'Generating...' : 'Generate Image'}
+      </button>
+    </form>
+    <div className='w-[512px] h-[512px] bg-gray-700 rounded-lg flex items-center justify-center text-white'>
+      {loading ? 'Generating your image...' : 
+       imageUrl ? (
+         <img 
+           src={imageUrl} 
+           alt="Generated"
+           className="max-w-full max-h-full object-contain rounded-lg p-2"
+         />
+       ) : 'Image will appear here'}
     </div>
+  </div>
+</div>
   )
 }
 
