@@ -49,7 +49,7 @@ function App() {
     }
 
   return (
-<div className="fixed inset-0 bg-gray-800 min-h-screen">
+<div className="min-h-screen bg-gray-800 overflow-auto">
   <div className="container mx-auto px-4 py-8 flex flex-col items-center justify-start gap-8">
   <h1 className="text-4xl font-bold text-white mb-4 mt-4">AI Image Generator</h1>
     <form onSubmit={handleSubmit} className="w-full flex flex-col items-center gap-4">
