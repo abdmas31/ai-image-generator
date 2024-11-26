@@ -51,7 +51,10 @@ function App() {
   return (
 <div className="fixed inset-0 bg-gray-800 overflow-y-auto">
   <div className="min-h-full w-full flex flex-col items-center p-8 gap-8">
-    <h1 className="text-4xl font-bold text-white">AI Image Generator</h1>
+    <div className="text-center">
+      <h1 className="text-4xl font-bold text-white">AI Image Generator</h1>
+      <p className="text-gray-400 font-medium mt-2">Built by Abdallah Massarwe</p>
+    </div>
     <div className="w-full max-w-3xl px-4">
       <form className="flex flex-col items-center gap-4 w-full" onSubmit={handleSubmit}>
         <input 
@@ -80,9 +83,6 @@ function App() {
          />
        ) : 'Image will appear here'}
     </div>
-    <footer className="mt-auto text-gray-400 font-medium">
-      Built by Abdallah Massarwe
-    </footer>
   </div>
 </div>
   )
