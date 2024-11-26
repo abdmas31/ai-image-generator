@@ -1,5 +1,5 @@
 # AI Image Generator
-
+My first personal project,
 A modern web application that generates images using OpenAI's DALL-E API based on text descriptions.
 
 ## 🌟 Features
@@ -12,7 +12,7 @@ A modern web application that generates images using OpenAI's DALL-E API based o
 
 ## 🚀 Live Demo
 
-Check out the live demo: [AI Image Generator](https://ai-image-generator-abdmas31.vercel.app/)
+Check out the live demo: [AI Image Generator](https://ai-image-generator-mocha.vercel.app/)
 
 ## 🛠️ Built With
 
@@ -65,6 +65,3 @@ The following environment variables are required:
 3. Wait for the AI to create your image
 4. The generated image will appear below
 
-## 🤝 Contributing
-
-Contributions, issues, and feature requests are welcome!
